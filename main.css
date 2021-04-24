@@ -1,0 +1,58 @@
+@media only screen and (min-width: 20rem) {
+    @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+        font-family:  'Lora', serif;
+        color: #000000;
+    }
+    h1 a {
+        text-decoration: none;
+        color: #6495ED;
+        list-style: none; 
+    }
+    h2{
+        font-family:  'Lora', serif;
+    }
+
+    h2 a {
+        text-decoration: none;
+        color: #6495ED;
+        list-style: none; 
+    }
+
+    nav a{
+        text-decoration: none;
+        color: #6495ED;
+        list-style: none; 
+    }
+
+    nav li{
+   
+        padding: 0 10px 0 10px;
+        list-style: none; 
+    }
+
+    nav a:visited {
+        color: #FAEBD7;
+        
+    }
+    
+     nav a:active {
+        color: #DEB887;
+    }
+    
+      nav a:hover {
+        background-color: #ffffff;
+        text-decoration: underline;
+    }
+
+    main{
+        background-color: #FAEBD7;
+        
+    }
+
+    
+}
