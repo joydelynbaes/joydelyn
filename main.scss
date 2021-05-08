@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+//css breakpoints
+$break-small: 20em;
+$break-medium: 31em;
+$break-large: 60em;  
+
+//COLOR
+$active-color:#DEB887;
+$hover-visited-color:#6495ED;
+$normal-visited-color:#FAEBD7;
+$body-color:black;
+
+
+@mixin breakpoint($break) {
+    @if $break == large {
+    @media (max-width: $break-large) { @content; }
+    }
+    @else if $break == medium {
+    @media (max-width: $break-medium) { @content; }
+    }
+    @else if $break == small {
+    @media (max-width: $break-small) { @content; }
+    } @else {
+    @media ($break) { @content; }
+    }
+    } 
+    
+
+    body{
+       
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    main{//MAIN
+        background-color: $normal-visited-color;
+        padding: 20px;
+        margin:0;
+        text-align: center;
+    
+        figure{
+            
+            margin-left:5px;
+        }
+    }
+    a{
+        color:$body-color;
+    }
+
+    h1{//H1
+        font-family:  'Lora', serif;
+        color: #000000;
+
+            a {
+                color: $hover-visited-color;
+                text-decoration: none;
+                list-style: none; 
+                padding-left: 10px;
+            }
+            @media (min-width: $break-large) {
+                & {
+                padding-left: 30px;
+            }
+        }
+    }
+    h2{//H2
+        font-family:  'Lora', serif;
+
+        a {
+            text-decoration: none;
+            color: #000000;
+            list-style: none; 
+        }
+    }
+
+    nav {//NAV
+        @media (min-width: $break-large) {
+            & {
+                    margin: 0;
+                    padding: 0;
+                    width: 200px;
+                    position: fixed;
+                    height: 100%;
+                    overflow: auto;
+                    background-color: #6495ED;
+                }
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: #030303;
+            list-style: none; 
+       
+         @media (min-width: $break-large) {
+            & {
+            display: block;
+            padding: 16px;
+            text-decoration: none;}
+        }
+    }
+
+        ul{
+            text-align: center;
+            padding-left: 0px;
+        }
+
+        li{
+            display: block;
+            padding: 0 10px 0 10px;
+            list-style: none; 
+      
+        @media (min-width: $break-large) {
+            & {
+                display: inline;
+             } 
+         }
+    }
+
+    .post-content p a{
+        text-decoration: none;
+        
+    }
+
+    a:active, p a:active {
+        color:$hover-visited-color;
+    }
+
+    a:visited, p a:visited {
+        color: $normal-visited-color;
+    }
+    a:hover, p a:hover {
+        color: $active-color;
+        text-decoration: underline;
+    }
+     
+    
