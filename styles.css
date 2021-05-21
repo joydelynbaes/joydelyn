@@ -42,27 +42,24 @@ h2 {
     height: 100%;
     overflow: auto;
     background-color: #6495ED; } }
-
-a {
+nav a {
   text-decoration: none;
   color: #030303;
   list-style: none; }
   @media (min-width: 60em) {
-    a {
+    nav a {
       display: block;
       padding: 16px;
       text-decoration: none; } }
-
-ul {
+nav ul {
   text-align: center;
   padding-left: 0px; }
-
-li {
+nav li {
   display: block;
   padding: 0 10px 0 10px;
   list-style: none; }
   @media (min-width: 60em) {
-    li {
+    nav li {
       display: inline; } }
 
 .post-content p a {
