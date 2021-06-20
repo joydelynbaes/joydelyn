@@ -193,6 +193,7 @@ footer a:link, footer a:visited {
 	height: 110px;
 	}
 
-	.stylelintrc.json {
+.stylelintrc.json {
 		"extends": "stylelint-config-standard"
+		
 	  }
