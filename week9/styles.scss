@@ -211,7 +211,7 @@ hr{
       border-radius: 2%;
       font-weight: bolder;
     }
-    
+
     img{
       @include img-width(98%,0, none, center );
       margin-top:5px;
@@ -245,23 +245,23 @@ hr{
       grid-area:main;
     }
     .main-banner{
-      margin-left:100px;
+      margin-left:10px;
     }
     .main-banner img{
-      width: 130%;
+      width: 150%;
       margin-left:50px;
     }
     .boxes{
       display: flex;
       max-width: 90%;
-      margin-left: 100px;
+      margin-left: 30px;
       .box{
         width:350px;
       }
     }
     aside{
       grid-area:aside;
-      font-size: 1.8em;
+      font-size: 1.5em;
     }
     .university-message{
       grid-area:message;
