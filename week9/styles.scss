@@ -10,7 +10,6 @@ $body-font: #020202;
 $link-blue: #0076b6; //why do we have both of these blues?
 $byui-blue: #056cb6;
 
-
 //mixins
 
 @mixin margins($left: auto, $right:auto){
@@ -23,7 +22,6 @@ $byui-blue: #056cb6;
   border: $border; 
   text-align: $center;
 }
-
 // Utility classes
 *,
 *:before,
@@ -44,9 +42,7 @@ img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
-}
-
-
+} 
 body{
   margin:0;
   font-family: 'BYUI Open Sans'; 
